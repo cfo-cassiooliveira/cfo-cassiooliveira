@@ -4,7 +4,7 @@
 
 [![Disponível para novas oportunidades](https://img.shields.io/badge/Disponível_para_novas_oportunidades-1f7f7a?style=for-the-badge)](https://cassiofernandooliveira.com.br/#contato)
 
-[![Portfólio](https://img.shields.io/badge/Portfólio-4652c8?style=for-the-badge&logo=githubpages&logoColor=white)](https://cassiofernandooliveira.com.br)
+[![Portfólio](https://img.shields.io/badge/Portfólio-4652c8?style=for-the-badge)](https://cassiofernandooliveira.com.br)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-4652c8?style=for-the-badge)](https://www.linkedin.com/in/cassiofernandooliveira/)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-4652c8?style=for-the-badge&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send?phone=5516992970597)
 [![E-mail](https://img.shields.io/badge/E--mail-4652c8?style=for-the-badge&logo=gmail&logoColor=white)](mailto:cassio.fernando@live.com)
