@@ -35,10 +35,11 @@ A arquitetura com que trabalho, reproduzida em código aberto:
 
 | Repositório | O que demonstra |
 |---|---|
-| [**Keycloak**](https://github.com/cfo-cassiooliveira/Keycloak) | Keycloak 26 com extensões em Java: auditoria de login sem dados pessoais (Event Listener SPI), tema de login próprio e realm endurecido |
-| [**legado-cadastro-usuarios**](https://github.com/cfo-cassiooliveira/legado-cadastro-usuarios) | Sistema em Clean Architecture (.NET 10, Angular 22, SQL Server) usado para simular a migração de usuários para o Keycloak sem pedir nova senha |
-| [**graylog**](https://github.com/cfo-cassiooliveira/graylog) | Logs centralizados provisionados como código, com mascaramento de dados pessoais (LGPD), streams e alertas |
-| [**sonarqube**](https://github.com/cfo-cassiooliveira/sonarqube) | Quality Gate como código: nenhuma issue nova e cobertura mínima de 80% em todo projeto |
+| [**cadastro**](https://github.com/cfo-cassiooliveira/cadastro) | Sucessor do legado autenticado só pelo Keycloak via BFF (.NET 10 + Angular 22): o navegador nunca recebe token (sessão no servidor, PKCE e PAR) e os usuários do legado migram no primeiro login, com a mesma senha |
+| [**Keycloak**](https://github.com/cfo-cassiooliveira/Keycloak) | Keycloak 26 com extensões em Java: auditoria de login sem dados pessoais (Event Listener SPI) enviada ao Graylog com fallback local, tema de login próprio e realm endurecido com o client do cadastro |
+| [**legado-cadastro-usuarios**](https://github.com/cfo-cassiooliveira/legado-cadastro-usuarios) | Sistema em Clean Architecture (.NET 10, Angular 22, SQL Server) com hash PBKDF2 importável: a origem dos usuários migrados para o Keycloak, com testes de arquitetura, integração e E2E |
+| [**graylog**](https://github.com/cfo-cassiooliveira/graylog) | Logs centralizados provisionados como código, com mascaramento de dados pessoais (LGPD), streams e alertas do legado, do Keycloak, do cadastro e da migração de identidade |
+| [**sonarqube**](https://github.com/cfo-cassiooliveira/sonarqube) | Quality Gate como código: nenhuma issue nova e cobertura mínima de 80% em todos os projetos do portfólio |
 | [**Site-Principal**](https://github.com/cfo-cassiooliveira/Site-Principal) | Meu portfólio: HTML, CSS e JavaScript sem framework, com testes, SEO e GitHub Pages |
 
 ### Stack
