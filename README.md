@@ -40,6 +40,7 @@ A arquitetura com que trabalho, reproduzida em código aberto:
 | [**legado-cadastro-usuarios**](https://github.com/cfo-cassiooliveira/legado-cadastro-usuarios) | Sistema em Clean Architecture (.NET 10, Angular 22, SQL Server) com hash PBKDF2 importável: a origem dos usuários migrados para o Keycloak, com testes de arquitetura, integração e E2E |
 | [**graylog**](https://github.com/cfo-cassiooliveira/graylog) | Logs centralizados provisionados como código, com mascaramento e pseudonimização por HMAC dos dados pessoais (LGPD), que permite pesquisar um titular pelo token sem expor o valor, além de streams e alertas do legado, do Keycloak, do cadastro e da migração de identidade |
 | [**workspace-grafana**](https://github.com/cfo-cassiooliveira/workspace-grafana) | Grafana OSS com login único pelo Keycloak e dashboards, alertas e health check como código, lendo os logs do Graylog por um proxy somente leitura do OpenSearch |
+| [**rabbitmq**](https://github.com/cfo-cassiooliveira/rabbitmq) | RabbitMQ 4.3 em Docker com a topologia como código (filas quorum com DLQ), usuário guest removido e permissões mínimas por aplicação, TLS opcional, métricas para o Prometheus e logs com fallback local enviados ao Graylog |
 | [**sonarqube**](https://github.com/cfo-cassiooliveira/sonarqube) | Quality Gate como código: nenhuma issue nova e cobertura mínima de 80% em todos os projetos do portfólio |
 | [**Site-Principal**](https://github.com/cfo-cassiooliveira/Site-Principal) | Meu portfólio: HTML, CSS e JavaScript sem framework, com testes, SEO e GitHub Pages |
 
